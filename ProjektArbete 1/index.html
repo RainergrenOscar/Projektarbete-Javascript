@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <title>ProjektArbete</title>
+    <link rel="stylesheet" href="style.css">
+  <body>
+    <!-- INFO OM VAD SIDAN GÖR-->
+    <div class="fix">
+      <form>
+        <!-- input fält för djurets namn-->
+        <label for="djuretsNamn">Namn</label>
+        <input type="text" id="djuretsNamn" placeholder="Namn..." /> <br />
+        <br />
+
+        <!-- input fält för djurets ålder-->
+        <div class="tooltip">Ålder ⓘ
+        <span class="tooltiptext">Obs, är din katt eller hund över 9 år tillkommer en extra kostnad på 25 kr</span>
+        </div>
+        <input type="number" id="djuretsÅlder" placeholder="Ålder..." /> <br />
+        <br />
+
+        <!--Droplist för olika djur-->
+        <label for="dropdjur">Djur art</label>
+        <select id="art">
+          <option value="katt" id="katt">Katt</option>
+          <option value="hund" id="hund">Hund</option>
+          <option value="kanin" id="kanin">Kanin</option>
+          <option value="hamster" id="hamster">Hamster</option>
+        </select>
+        <br /><br />
+
+        <!-- Droplist för olika försäkrings alternativ-->
+        <div class="tooltip">Välj försäkrings typ : ⓘ
+        <span class="tooltiptext">Bas: En stabil grundförsäkring för ditt djur. + 0 kr
+        Premium: En heltäckande försäkring som även inkluderar ovanligare åkommor. grundavgift + 25 kr.
+        Lyx: Om du vill vara helt säker på att vad än ditt djur råkar ut för så kommer den här försäkringen att täcka det. + 50 kr</span>
+        </div>
+        <select id="försäkring">
+          <option value="bas" id="">Bas</option>
+          <option value="premium">Premium</option>
+          <option value="lyx">Lyx</option>
+        </select>
+        <br /><br />
+
+        <!-- Knapp för att utföra lägg Till funktion-->
+        <button id="btn" >Lägg till</button> 
+        <br /> <br />
+        <!-- Knapp för att utföra visaDjur funktion-->
+        <button type="button" onclick="visaDjur()">Visa mina försäkrade djur</button>
+        <br /> <br />
+        <!-- Knapp för att utföra ångraDjur funktion-->
+        <button type="button" onclick="ångraDjur()">Ångra senaste djuret</button>
+
+      </form>
+    </div>
+    
+    <div id="output"></div>
+    <div id="error"></div>
+  </body>
+  <script src="script.js"></script>
+</html>
+
+ 
+
+  

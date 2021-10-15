@@ -1,0 +1,86 @@
+html {
+  background: url("https://www.teahub.io/photos/full/4-47393_hipster-cat-wallpaper-tumblr-cat-aesthetic-wallpaper-desktop.jpg")
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Oswald", sans-serif;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(165, 165, 165);
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 5px 3px 5px;
+}
+
+button {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(55, 55, 55);
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgb(165, 165, 165);
+  box-shadow: 5px 3px 5px;
+}
+button:hover {
+  background-color: rgb(102, 102, 102);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.457);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.fallandeDjur {
+  position: fixed;
+  top: -1vh;
+  font-size: 2.5rem;
+  transform: translateY(0);
+  animation: fall 4s linear forwards;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(105vh);
+  }
+}
+
+#output {
+  background-color: rgb(252, 249, 249);
+  padding: 5px;
+  position: absolute;
+  right: 27%;
+  top: 5.5%;
+}
